@@ -1,7 +1,9 @@
 # File Transfer Between Local and Remote Server via SSH Connection
 \
 **Run the below commands in CMD prompt**
-\
+If files not transfered/copied due to permission denied, then run "sudo chmod 777 /etc/your/folder/" for your remover server folder.
+
+
 
 ## Upload file from local to remote server
 > pscp -i <local_putty_ppk_file_path> <local_file_path> <server_username@ip_address:sever_folfer_path>
