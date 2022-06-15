@@ -1,7 +1,8 @@
 # File Transfer Between Local and Remote Server via SSH Connection
 \
 **Run the below commands in CMD prompt**
-If files not transfered/copied due to permission denied, then run "sudo chmod 777 /etc/your/folder/" for your remover server folder.
+\
+If files not transfered/copied due to permission denied, then run ***sudo chmod 777 /etc/your/folder/*** for your remover server folder.
 
 
 
