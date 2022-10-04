@@ -1,0 +1,21 @@
+ <system.web>
+    <authorization>
+      <allow users="*" />
+    </authorization>
+    <customErrors mode="Off"/>
+    <compilation targetFramework="4.6.1" />
+    <httpRuntime targetFramework="4.6.1" />
+  </system.web>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="Redirect from http to https" enabled="true" stopProcessing="true">
+        <match url="(.*)" />
+        <conditions>
+        <add input="{HTTPS}" pattern="off" ignoreCase="true" />
+        </conditions>
+        <action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" redirectType="Permanent" appendQueryString="false" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
